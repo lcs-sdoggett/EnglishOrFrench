@@ -61,9 +61,9 @@ class ViewController: UIViewController {
         }
         
         // Compare variables, change label depending on values
-        if sCount == tCount || sCount >= tCount {
+        if sCount >= tCount {
             outputLabel.text = "This looks like French"
-        } else if sCount <= tCount{
+        } else if sCount < tCount{
             outputLabel.text = "This looks like English"
         }
     }
