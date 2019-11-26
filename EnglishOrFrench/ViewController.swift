@@ -51,11 +51,13 @@ class ViewController: UIViewController {
             
             switch singleCharacter {
             case "s","S":
-                // Add 1 to variable
+                // Add 1 to sCount
                 sCount += 1
             case "t","T":
+                // Add 1 to tCount
                 tCount += 1
             default:
+                // If neither a "s" or "t" are present, change label to "Not sure
                 outputLabel.text = "Not sure"
             }
         }
